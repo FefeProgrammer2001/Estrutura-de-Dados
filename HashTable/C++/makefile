@@ -9,8 +9,9 @@ Hash: $(BIN)
 $(BIN): $(SRC)
 	$(CC) $(CFLAG) -c $(SRC)
 	$(CC) $(OBJ) -o $(BIN)
+	rm -rf Main.o
 
 clean:
-	rm -rf Main Main.o
+	rm -rf Main
 
-.PHONY: Hash Clean
+.PHONY: Hash clean
