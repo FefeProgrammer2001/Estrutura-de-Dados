@@ -1,4 +1,4 @@
-package HashMap;
+package Funcional;
 
 import java.util.Optional;
 import java.util.concurrent.locks.ReentrantLock;
