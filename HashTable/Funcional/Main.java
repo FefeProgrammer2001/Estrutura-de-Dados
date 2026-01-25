@@ -1,4 +1,4 @@
-package HashMap;
+package Funcional;
 
 import java.util.List;
 
