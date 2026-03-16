@@ -1,6 +1,6 @@
 # Projeto de implementação de Huffman
-### Compilar:
+### Compilar
   javac -encoding UTF-8 Main.jar
 
-### Jar File:
+### Jar File
   jar cvfe huffman.jar Main *.class
