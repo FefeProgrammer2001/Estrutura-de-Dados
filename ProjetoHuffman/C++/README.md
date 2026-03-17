@@ -4,5 +4,5 @@
     make
 ### Clear all:
     make clear
-### For debug
+### For debug:
     gdb ./Huffman
