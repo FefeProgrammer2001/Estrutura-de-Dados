@@ -1,25 +1,29 @@
 package AVL;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         AVL avl = new AVL();
+        System.out.print("Digite a quantidade de elementos da AVL: ");
+        int n = sc.nextInt();
 
-        avl.inserir(10);
-        avl.inserir(4);
-        avl.inserir(6);
-        avl.inserir(11);
-        avl.inserir(1);
-        avl.inserir(3);
+        System.out.println("Digite a os valores da AVL");
+        for(int i = 0; i < n; i++) {
+            System.out.print("Elemento " + (i+1) + ": ");
+            int elemento = sc.nextInt();
+            avl.inserir(elemento);
+        }
 
-        System.out.println("Travessia em ordem");
-        avl.emOrdem();
-
-        System.out.println("Informações:");
+        System.out.println("Informações da árvore:");
         avl.exibirInfoNos();
 
-        System.out.println("Menor valor: " + avl.menorValor());
-        System.out.println("Maior valor: " + avl.maiorValor());
+        System.out.println("Menor elemento: " + avl.menorValor());
+        System.out.println("Maior elemento: " + avl.maiorValor());
 
         System.out.println(avl);
+        sc.close();
     }
 }

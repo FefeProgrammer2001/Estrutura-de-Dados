@@ -169,7 +169,7 @@ public class AVL {
     }
 
     public int menorValor() {
-        if(raiz == null) throw new IllegalStateException("Arvore vazia");
+        if(raiz == null) throw new IllegalStateException("AVL vazia");
         return menorValorRec(raiz);
     }
 
@@ -181,7 +181,7 @@ public class AVL {
     }
 
     public int maiorValor() {
-        if(raiz == null) throw new IllegalStateException("Arvore vazia");
+        if(raiz == null) throw new IllegalStateException("AVL vazia");
         return maiorValorRec(raiz);
     }
 
@@ -194,6 +194,6 @@ public class AVL {
 
     @Override
     public String toString() {
-        return "Raiz: " + getRaiz() + "\n";
+        return "Raíz: " + getRaiz() + "\n";
     }
 }
